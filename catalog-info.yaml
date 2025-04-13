@@ -2,6 +2,8 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: "manually-created-catalog-info"
+  annotations:
+    argocd/app-name: ${{ values.name }}
 spec:
   type: service
   owner: user:guest
